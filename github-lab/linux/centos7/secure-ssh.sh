@@ -13,7 +13,7 @@ NewUser=$1
 #Adds New SSH User
 useradd -m -d /home/"$NewUser" -s /bin/bash "$NewUser"
 mkdir -p /home/"$NewUser"/.ssh
-sudo cp /home/michael-loc/SYS-265_Tech-Journal/github-lab/linux/centos7/id_rsa.pub /home/"$NewUser"/.ssh
+sudo cp /home/michael-loc/SYS-265_Tech-Journal/github-lab/linux/public-keys/id_rsa.pub /home/"$NewUser"/.ssh
 sudo chmod 700 /home/"$NewUser"/.ssh
 sudo chown -R "$NewUser":"$NewUser" /home/"$NewUser"/.ssh
 
